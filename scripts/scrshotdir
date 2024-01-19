@@ -1,0 +1,13 @@
+#!/bin/bash
+# command to change screen capture directory
+#
+if [ -z "$1" ]
+  then echo "Please supply a filepath"
+  exit 1
+fi
+if [ -d "$1" ]
+  then defaults write com.apple.screencapture location -string  $1
+  echo "The location is set to:" defaults read com.apple.screencapture  | grep location
+  else echo "Please supply the path to a directory"
+  exit 1
+fi

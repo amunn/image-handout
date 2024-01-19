@@ -1,0 +1,8 @@
+#!/bin/bash
+count=0
+ls -t $(
+for file in *.png; do
+  output_file="$1$(( ++number )).png"
+ mv "$file" $output_file
+done)
+echo "File count = $number"
