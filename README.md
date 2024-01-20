@@ -95,7 +95,7 @@ If you are interspersing text between examples, such as section headings or your
 Some more text
 \insertimages[start=6,end=10]
 Some more text
-\insertimages[path=SecondImageFolder,prefix=SecondPrefix,end=5]
+\insertimages[path=SecondImageFolder,prefix=SecondPrefix,start=1,end=5]
 \end{document}
 ```
 
