@@ -34,19 +34,19 @@ The package assumes that each screenshot is numbered sequentially in a form `Pre
 
 # Package commands
 
-There are two main commands, a setup command `\SetupHandout` to set global parameters, and an insertion command `\insertimages`, which can also use local key-value setup options.
+There are two main commands, a setup command `\SetupHandout` to set global parameters, and an insertion command `\insertimages`, which can also use local key-value setup options. Note: `<value>` means that you type your own value for that key without the `<>`.
 
 ## Setup command
 
  - `\SetupHandout{}`
     - `prefix=<image-prefix>`
     - `end=<number of images>`
-    - `path=<path to folder containing the images`
+    - `path=<path to folder containing the images>`
     - `start=<starting number>` (defaults to 1)
 
 ## Insertion command
 
- - `\insertimages[<local options]`
+ - `\insertimages[<local options>]`
     
 
 ## Sample document
