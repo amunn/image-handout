@@ -16,7 +16,7 @@ Download the helper apps zip file [here](https://github.com/amunn/image-handout/
 
 Download the LaTeX package [here](https://github.com/amunn/image-handout/blob/main/image-handout.sty)
 
-Install the LaTeX package in your local `texmf` folder: on a Mac this will be `~/Library/texmf/tex/latex`. If you don't have this folder you will need to create it. 
+Install the LaTeX package in your local `texmf` folder: on a Mac this will be `~/Library/texmf/tex/latex`. If you don't have this folder you will need to create it or use this [helper app/script](https://github.com/amunn/make-local-texmf).
 
 If you're using Overleaf, upload the `.sty` file to your project. 
 
