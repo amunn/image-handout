@@ -7,11 +7,14 @@ It provides a setup command `\SetupHandout` and a single command to insert a set
 
 Images are expected to be sequentially numbered with a common image prefix, example: `MyPrefix1.png`, `MyPrefix2.png` etc.  Leading zeros should be avoided. 
 
-How you create the images is up to you, but for Mac users, a couple of simple apps are provided to choose a folder to save screenshots and rename a set of screen shot files.
+How you create the images is up to you, but for Mac users, a couple of simple apps are provided to choose a folder to save screenshots and rename a set of screen shot files.  The helper apps are Mac only.
 
 # Installation
 
+
 Download the helper apps zip file [here](https://github.com/amunn/image-handout/blob/main/scripts/MacHelperApps.zip)  These should be installed in your Applications folder. 
+
+Download the LaTeX package [here](https://github.com/amunn/image-handout/blob/main/image-handout.sty)
 
 Install the LaTeX package in your local `texmf` folder: on a Mac this will be `~/Library/texmf/tex/latex`. If you don't have this folder you will need to create it. 
 
