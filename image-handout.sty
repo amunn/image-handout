@@ -1,6 +1,6 @@
 \ExplSyntaxOn
-\str_set:Nn\l_hout_version_str {0.5}
-\str_set:Nn \l_hout_date_str {2024/01/19}
+\str_set:Nn\l_hout_version_str {0.6}
+\str_set:Nn \l_hout_date_str {2024/01/24}
 % image-handout is a package which allows you to quickly generate a handout from 
 % a sequentially numbered set of screen shot images.
 %
@@ -36,10 +36,12 @@
 	end.int_set:N = \l_hout_image_count_int,
 	start.int_set:N = \l_hout_image_start_int,
 	start.initial:n = {1},
-	path.code:n = \graphicspath{{#1}}
+	path.code:n = \graphicspath{{#1}},
+	width.tl_set:N = \l_hout_image_width_tl,
+	width.initial:n = \linewidth
 }
 \cs_set:Npn \hout_insert_imgs:n #1 
-	{\includegraphics[width=\linewidth]{\l_hout_image_prefix_tl#1}\par}
+	{\includegraphics[width=\l_hout_image_width_tl]{\l_hout_image_prefix_tl#1}\par}
 \NewDocumentCommand{\insertimages}{o}{
 \group_begin:
 	\IfNoValueF{#1}{\keys_set:nn {hout} {#1}}

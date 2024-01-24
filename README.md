@@ -1,5 +1,7 @@
 # The `image-handout` package
 
+## Version 0.6 January 24, 2024
+
 The  `image-handout`  allows you to quickly generate a handout from 
  a sequentially numbered set of screen shot images.
 
@@ -22,7 +24,7 @@ If you're using Overleaf, upload the `.sty` file to your project.
 
 # How to make good screen shots
 
-On a Mac, the default location for screenshots is the Desktop, but this is not very practical as a place for this use, so I've provided a small helper app `SetScreenShotFolder.app` that lets you choose a specific folder to store the iamges in.  A sensible organization would be to store the images in their own folder inside the folder containing the `.tex` file.
+On a Mac, the default location for screenshots is the Desktop, but this is not very practical as a place for this use, so I've provided a small helper app `SetScreenShotFolder.app` that lets you choose a specific folder to store the images in.  A sensible organization would be to store the images in their own folder inside the folder containing the `.tex` file.
 
 In order for your images to look uniform in a handout, you need to make sure that they are all (approximately) the same size. The best way to ensure this is to view the PDF at regular size, and then screenshot the entire width of the document for every example no matter how big or small it is.   The command to make a screen shot on a Mac is Command-Option-4, which then gives you a draggable guide to select the region to screen shot.
 
@@ -30,7 +32,7 @@ It's really a good idea to make all the screenshots at once. Even for a large pa
 
 # Renaming the screenshots
 
-The package assumes that each screenshot is numbered sequentially in a form `Prefix1.png`, `Prefix2.png`, etc. so I've provided a second helper app `RenameImages.app` to rename all the .png files in a folder sequetially with a common prefix. This app sorts the files sequentially by modification timestamp, so you should only run it once otherwise your screenshots may get out of order.
+The package assumes that each screenshot is numbered sequentially in a form `Prefix1.png`, `Prefix2.png`, etc. so I've provided a second helper app `RenameImages.app` to rename all the .png files in a folder sequentially with a common prefix. This app sorts the files sequentially by modification timestamp, so you should only run it once otherwise your screenshots may get out of order.
 
 # Package commands
 
@@ -43,6 +45,7 @@ There are two main commands, a setup command `\SetupHandout` to set global param
     - `end=<number of images>`
     - `path=<path to folder containing the images>`
     - `start=<starting number>` (defaults to 1)
+    - `width=<width of inserted images>` (defaults to `\linewidth`)
 
 ## Insertion command
 
@@ -69,7 +72,7 @@ The simplest document would simply specify the location of the files, the image 
 
 ## Good citation practices
 
-It's important to make it clear where your examples are coming from, so I always make the `\author` field the actual citaion of the paper. If you use `biblatex` this is very simple. Suppose you have a `.bib` file entry `Author2022` you would do the following, which puts the title of the paper as the title of the handout, and the full citation as the author. Of course if your handout has more content than just the paper, you may want to add a separate bibliography elsewhere in the document. 
+It's important to make it clear where your examples are coming from, so I always make the `\author` field the actual citation of the paper. If you use `biblatex` this is very simple. Suppose you have a `.bib` file entry `Author2022` you would do the following, which puts the title of the paper as the title of the handout, and the full citation as the author. Of course if your handout has more content than just the paper, you may want to add a separate bibliography elsewhere in the document. 
 
 ```
 \usepackage[style=apa]{biblatex}
@@ -103,6 +106,8 @@ Some more text
 # The fine print
 
  Copyright 2024 by Alan Munn
+ 
+## LaTeX package licence
 
  This package may be distributed and/or modified under the
  conditions of the LaTeX Project Public License, either version 1.3
@@ -120,3 +125,12 @@ Some more text
  `README.md`
 
  This package is currently experimental. Use at your own risk.
+ 
+ ## Helper scripts licence
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
