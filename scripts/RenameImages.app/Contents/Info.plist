@@ -41,6 +41,8 @@
 	<string>This script needs access to your contacts to run.</string>
 	<key>NSHomeKitUsageDescription</key>
 	<string>This script needs access to your HomeKit Home to run.</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>© 2024 by Alan Munn</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>This script needs access to your microphone to run.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
@@ -56,21 +58,21 @@
 	<key>WindowState</key>
 	<dict>
 		<key>bundleDividerCollapsed</key>
-		<true/>
+		<false/>
 		<key>bundlePositionOfDivider</key>
-		<real>0.0</real>
+		<real>439</real>
 		<key>dividerCollapsed</key>
-		<true/>
+		<false/>
 		<key>eventLogLevel</key>
 		<integer>2</integer>
 		<key>name</key>
 		<string>ScriptWindowState</string>
 		<key>positionOfDivider</key>
-		<real>223</real>
+		<real>195</real>
 		<key>savedFrame</key>
-		<string>451 419 738 486 0 0 1920 1055 </string>
+		<string>232 378 738 486 0 0 1920 1055 </string>
 		<key>selectedTab</key>
-		<string>description</string>
+		<string>result</string>
 	</dict>
 </dict>
 </plist>
