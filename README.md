@@ -14,7 +14,7 @@ How you create the images is up to you, but for Mac users, a couple of simple ap
 # Installation
 
 
-Download the helper apps zip file [here](https://github.com/amunn/image-handout/blob/main/scripts/MacHelperApps.zip)  These should be installed in your Applications folder. 
+Download the helper apps zip file from the Releases page [here](https://github.com/amunn/image-handout/releases)  These should be installed in your Applications folder. 
 
 Download the LaTeX package [here](https://github.com/amunn/image-handout/blob/main/image-handout.sty)
 
